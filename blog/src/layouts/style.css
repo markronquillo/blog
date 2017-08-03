@@ -1,0 +1,25 @@
+body {
+  width: 60%;
+  margin: 0 auto;
+  color: #7e7e7e;
+}
+
+.header {
+  margin: 40px 0;
+  height: 60px;
+}
+
+.header .name {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.Blogs > .summary {
+  margin-bottom: 40px;
+}
+
+.Blogs > .summary .title {
+  font-size: 24pt;
+  color: #7a7a7a;
+  font-weight: normal
+}

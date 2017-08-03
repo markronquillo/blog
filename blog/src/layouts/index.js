@@ -3,41 +3,32 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
+import Container from '../components/container';
+
 import './index.css'
+import './style.css'
 
 const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-            </Link>
-      </h1>
-    </div>
-  </div>
+  <Container className="header" spaceBetween width="100%">
+    <Container spaceBetween column>
+      <div className="name">Mark Joseph Ronquillo</div>
+      <div>Software Engineer</div>
+    </Container>
+    <Container spaceBetween column>
+      <div className="">
+        Blog | Projects | About
+      </div>
+      <div>
+        
+      </div>
+    </Container>
+  </Container>
 )
 
 const TemplateWrapper = ({
   children
 }) => (
-    <div>
+    <Container column>
       <Helmet
         title="Gatsby Default Starter"
         meta={[
@@ -46,17 +37,9 @@ const TemplateWrapper = ({
         ]}
       />
       <Header />
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '0px 1.0875rem 1.45rem',
-          paddingTop: 0,
-        }}
-      >
-        {children()}
-      </div>
-    </div>
+      
+      {children()}
+    </Container>
   )
 
 TemplateWrapper.propTypes = {
