@@ -1,6 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: "blog | markronquillo"
   },
-  plugins: [`gatsby-plugin-react-helmet`],
-}
+  plugins: [
+    "gatsby-plugin-react-helmet",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [`gatsby-remark-prismjs`]
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`
+      }
+    }
+  ]
+};

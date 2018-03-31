@@ -1,17 +1,27 @@
 body {
-  width: 60%;
+  width: 600px;
   margin: 0 auto;
-  color: #7e7e7e;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Crimson Text','serif';
 }
 
 .header {
   margin: 40px 0;
-  height: 60px;
+  height: 120px;
+  text-align: center;
 }
 
 .header .name {
-  font-size: 18pt;
+  font-size: 24pt;
+  margin-bottom: 15px;
   font-weight: bold;
+}
+
+.header-links a:not(:last-child) {
+  margin-right: 15px;
 }
 
 .Blogs > .summary {
@@ -19,7 +29,18 @@ body {
 }
 
 .Blogs > .summary .title {
-  font-size: 24pt;
-  color: #7a7a7a;
-  font-weight: normal
+  font-size: 18pt;
+  font-weight: normal;
+  color: #4078c0;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.Blogs > .summary .date {
+  font-size: 12pt;
+  color: #999;
+}
+
+.content p {
+  line-height: 2.2em;
 }

@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const ContentSummary = styled.div`
-   border-left: 10px solid #d8d8d8;
-   margin-left: -25px;
-   padding-left: 25px;
-`
+  border-left: 5px solid #d8d8d8;
+  margin-left: -15px;
+  padding-left: 15px;
+`;
 
-export default ContentSummary
+export default ContentSummary;

@@ -4,7 +4,7 @@ import SectionTitle from "../components/section_title";
 import ContentSummary from "../components/content_summary";
 import Container from "../components/container";
 
-const IndexPage = ({ data }) => (
+const BlogPage = ({ data }) => (
   <div className="Page">
     <SectionTitle>Blog</SectionTitle>
     <Container column className="Blogs">
@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => (
 );
 
 export const query = graphql`
-  query HomePageQuery {
+  query Posts {
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
@@ -46,4 +46,4 @@ export const query = graphql`
     }
   }
 `;
-export default IndexPage;
+export default BlogPage;
